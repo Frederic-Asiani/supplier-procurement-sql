@@ -1,0 +1,306 @@
+{
+  "tableaux": {
+    "fournisseurs": 8,
+    "produits": 80,
+    "commandes": 180,
+    "lignes_commande": 509,
+    "livraisons": 461
+  },
+  "requetes": {
+    "ANALYSE 1 | Taux de service fournisseurs en quantite": {
+      "colonnes": [
+        "fournisseur",
+        "qte_commandee",
+        "qte_recue",
+        "taux_service_pct"
+      ],
+      "apercu": [
+        {
+          "fournisseur": "Lubumbashi Supply",
+          "qte_commandee": 2722,
+          "qte_recue": 2332,
+          "taux_service_pct": 85.67
+        },
+        {
+          "fournisseur": "Port Matadi Pro",
+          "qte_commandee": 3041,
+          "qte_recue": 2532,
+          "taux_service_pct": 83.26
+        },
+        {
+          "fournisseur": "Kasai Trading",
+          "qte_commandee": 1356,
+          "qte_recue": 1118,
+          "taux_service_pct": 82.45
+        },
+        {
+          "fournisseur": "Congo Logistique",
+          "qte_commandee": 2045,
+          "qte_recue": 1652,
+          "taux_service_pct": 80.78
+        },
+        {
+          "fournisseur": "Kivu Grossiste",
+          "qte_commandee": 2251,
+          "qte_recue": 1787,
+          "taux_service_pct": 79.39
+        },
+        {
+          "fournisseur": "RDC Fournitures",
+          "qte_commandee": 2483,
+          "qte_recue": 1969,
+          "taux_service_pct": 79.3
+        },
+        {
+          "fournisseur": "Kinshasa Marchés",
+          "qte_commandee": 1976,
+          "qte_recue": 1526,
+          "taux_service_pct": 77.23
+        },
+        {
+          "fournisseur": "Equateur Import",
+          "qte_commandee": 2449,
+          "qte_recue": 1834,
+          "taux_service_pct": 74.89
+        }
+      ]
+    },
+    "ANALYSE 2 | Delai de livraison moyen et retards en jours": {
+      "colonnes": [
+        "fournisseur",
+        "receptions",
+        "delai_moyen_jours",
+        "retard_moyen_jours"
+      ],
+      "apercu": [
+        {
+          "fournisseur": "Kivu Grossiste",
+          "receptions": 55,
+          "delai_moyen_jours": 16.3,
+          "retard_moyen_jours": 5.7
+        },
+        {
+          "fournisseur": "Congo Logistique",
+          "receptions": 51,
+          "delai_moyen_jours": 16.6,
+          "retard_moyen_jours": 5.3
+        },
+        {
+          "fournisseur": "Kasai Trading",
+          "receptions": 32,
+          "delai_moyen_jours": 16.5,
+          "retard_moyen_jours": 5.2
+        },
+        {
+          "fournisseur": "Kinshasa Marchés",
+          "receptions": 43,
+          "delai_moyen_jours": 14.8,
+          "retard_moyen_jours": 5.2
+        },
+        {
+          "fournisseur": "Lubumbashi Supply",
+          "receptions": 68,
+          "delai_moyen_jours": 12.9,
+          "retard_moyen_jours": 4.9
+        },
+        {
+          "fournisseur": "Equateur Import",
+          "receptions": 63,
+          "delai_moyen_jours": 15.2,
+          "retard_moyen_jours": 4.7
+        },
+        {
+          "fournisseur": "Port Matadi Pro",
+          "receptions": 80,
+          "delai_moyen_jours": 14.9,
+          "retard_moyen_jours": 4.5
+        },
+        {
+          "fournisseur": "RDC Fournitures",
+          "receptions": 69,
+          "delai_moyen_jours": 13.8,
+          "retard_moyen_jours": 4.1
+        }
+      ]
+    },
+    "ANALYSE 3 | Valeur des lignes ouvertes non recues": {
+      "colonnes": [
+        "commande",
+        "fournisseur",
+        "date_promesse",
+        "valeur_non_recue_usd"
+      ],
+      "apercu": [
+        {
+          "commande": 64,
+          "fournisseur": "Equateur Import",
+          "date_promesse": "2026-01-25",
+          "valeur_non_recue_usd": 3915.48
+        },
+        {
+          "commande": 67,
+          "fournisseur": "Congo Logistique",
+          "date_promesse": "2026-04-08",
+          "valeur_non_recue_usd": 3751.0
+        },
+        {
+          "commande": 32,
+          "fournisseur": "Kivu Grossiste",
+          "date_promesse": "2026-04-04",
+          "valeur_non_recue_usd": 3526.4399999999996
+        },
+        {
+          "commande": 16,
+          "fournisseur": "Kinshasa Marchés",
+          "date_promesse": "2026-01-06",
+          "valeur_non_recue_usd": 3322.6200000000003
+        },
+        {
+          "commande": 25,
+          "fournisseur": "Congo Logistique",
+          "date_promesse": "2026-04-23",
+          "valeur_non_recue_usd": 3257.98
+        },
+        {
+          "commande": 84,
+          "fournisseur": "Congo Logistique",
+          "date_promesse": "2026-04-21",
+          "valeur_non_recue_usd": 2985.28
+        },
+        {
+          "commande": 127,
+          "fournisseur": "Lubumbashi Supply",
+          "date_promesse": "2026-04-16",
+          "valeur_non_recue_usd": 2983.05
+        },
+        {
+          "commande": 125,
+          "fournisseur": "Kinshasa Marchés",
+          "date_promesse": "2026-03-13",
+          "valeur_non_recue_usd": 2951.6
+        }
+      ]
+    },
+    "ANALYSE 4 | Concentration des achats par fournisseur": {
+      "colonnes": [
+        "fournisseur",
+        "commandes",
+        "montant_commande_usd"
+      ],
+      "apercu": [
+        {
+          "fournisseur": "Lubumbashi Supply",
+          "commandes": 24,
+          "montant_commande_usd": 111677.93
+        },
+        {
+          "fournisseur": "Port Matadi Pro",
+          "commandes": 31,
+          "montant_commande_usd": 105927.66
+        },
+        {
+          "fournisseur": "Kivu Grossiste",
+          "commandes": 21,
+          "montant_commande_usd": 96509.86
+        },
+        {
+          "fournisseur": "Congo Logistique",
+          "commandes": 17,
+          "montant_commande_usd": 93887.89
+        },
+        {
+          "fournisseur": "Equateur Import",
+          "commandes": 23,
+          "montant_commande_usd": 91807.92
+        },
+        {
+          "fournisseur": "RDC Fournitures",
+          "commandes": 28,
+          "montant_commande_usd": 89986.67
+        },
+        {
+          "fournisseur": "Kinshasa Marchés",
+          "commandes": 21,
+          "montant_commande_usd": 76137.26
+        },
+        {
+          "fournisseur": "Kasai Trading",
+          "commandes": 15,
+          "montant_commande_usd": 54639.94
+        }
+      ]
+    },
+    "ANALYSE 5 | Receptions par categorie et mois": {
+      "colonnes": [
+        "mois",
+        "categorie",
+        "unites_recues",
+        "montant_recu_usd"
+      ],
+      "apercu": [
+        {
+          "mois": "2026-01",
+          "categorie": "Alimentaire",
+          "unites_recues": 424,
+          "montant_recu_usd": 22441.9
+        },
+        {
+          "mois": "2026-01",
+          "categorie": "Fournitures",
+          "unites_recues": 448,
+          "montant_recu_usd": 18975.75
+        },
+        {
+          "mois": "2026-01",
+          "categorie": "Hygiène",
+          "unites_recues": 356,
+          "montant_recu_usd": 14948.6
+        },
+        {
+          "mois": "2026-01",
+          "categorie": "Électronique",
+          "unites_recues": 295,
+          "montant_recu_usd": 10893.87
+        },
+        {
+          "mois": "2026-02",
+          "categorie": "Alimentaire",
+          "unites_recues": 549,
+          "montant_recu_usd": 23280.92
+        },
+        {
+          "mois": "2026-02",
+          "categorie": "Fournitures",
+          "unites_recues": 307,
+          "montant_recu_usd": 10927.63
+        },
+        {
+          "mois": "2026-02",
+          "categorie": "Hygiène",
+          "unites_recues": 553,
+          "montant_recu_usd": 24863.36
+        },
+        {
+          "mois": "2026-02",
+          "categorie": "Électronique",
+          "unites_recues": 536,
+          "montant_recu_usd": 19248.69
+        }
+      ]
+    },
+    "ANALYSE 6 | Taux de lignes livrees integralement": {
+      "colonnes": [
+        "total_lignes",
+        "lignes_completes",
+        "lignes_completes_pct"
+      ],
+      "apercu": [
+        {
+          "total_lignes": 509,
+          "lignes_completes": 304,
+          "lignes_completes_pct": 59.72
+        }
+      ]
+    }
+  }
+}
